@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Always revalidate the menu so a replaced menu.json shows up immediately.
+[[headers]]
+  for = "/menu.json"
+  [headers.values]
+    Cache-Control = "no-cache"

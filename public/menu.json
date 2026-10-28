@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-26T09:00:00.000Z",
+  "cafeteria": {
+    "name": "Comedor Corporativo",
+    "hours": "12:30 a 13:00 y 13:30 a 14:00",
+    "location": "",
+    "notice": ""
+  },
+  "days": {
+    "monday": {
+      "note": "",
+      "items": {
+        "principal": {
+          "name": "Milanesa de ternera al horno",
+          "description": "Con puré de papas y calabaza"
+        },
+        "dieta": {
+          "name": "Pechuga grillada a las hierbas",
+          "description": "Con vegetales salteados y arroz integral"
+        },
+        "opcional1": {
+          "name": "Tarta de espinaca y ricota",
+          "description": "Con ensalada de hojas verdes"
+        },
+        "opcional2": {
+          "name": "Ensalada César con pollo",
+          "description": "Lechuga romana, croutons, parmesano y aderezo César"
+        }
+      }
+    },
+    "tuesday": {
+      "note": "",
+      "items": {
+        "principal": {
+          "name": "Bife de chorizo a la plancha",
+          "description": "Con papas rústicas y chimichurri"
+        },
+        "dieta": {
+          "name": "Merluza al vapor",
+          "description": "Con brócoli, zanahoria y limón"
+        },
+        "opcional1": {
+          "name": "Ñoquis de papa con salsa fileto",
+          "description": "Salsa de tomate natural y albahaca"
+        },
+        "opcional2": {
+          "name": "Wrap de vegetales grillados",
+          "description": "Berenjena, zucchini, morrón y hummus"
+        }
+      }
+    },
+    "wednesday": {
+      "note": "",
+      "items": {
+        "principal": {
+          "name": "Pollo al horno con limón y romero",
+          "description": "Con papas españolas y cebolla caramelizada"
+        },
+        "dieta": {
+          "name": "Bowl de quinoa y lentejas",
+          "description": "Con palta, tomate cherry y semillas"
+        },
+        "opcional1": {
+          "name": "Lasaña de verduras",
+          "description": "Espinaca, zapallitos, ricota y salsa blanca"
+        },
+        "opcional2": {
+          "name": "Sándwich de lomito",
+          "description": "En pan árabe con lechuga, tomate y huevo"
+        }
+      }
+    },
+    "thursday": {
+      "note": "",
+      "items": {
+        "principal": {
+          "name": "Pastel de papas",
+          "description": "Carne picada, aceitunas y huevo, gratinado"
+        },
+        "dieta": {
+          "name": "Salmón rosado grillado",
+          "description": "Con ensalada tibia de vegetales asados"
+        },
+        "opcional1": {
+          "name": "Risotto de hongos",
+          "description": "Champiñones, portobellos y parmesano"
+        },
+        "opcional2": {
+          "name": "Ensalada mediterránea",
+          "description": "Garbanzos, pepino, tomate, aceitunas y queso feta"
+        }
+      }
+    },
+    "friday": {
+      "note": "Viernes de pastas: postre incluido.",
+      "items": {
+        "principal": {
+          "name": "Sorrentinos de jamón y queso",
+          "description": "Con salsa mixta (fileto y crema)"
+        },
+        "dieta": {
+          "name": "Wok de pollo y vegetales",
+          "description": "Con arroz yamaní y salsa de soja reducida en sodio"
+        },
+        "opcional1": {
+          "name": "Pizza de muzzarella y rúcula",
+          "description": "Masa madre, tomates secos y aceite de oliva"
+        },
+        "opcional2": {
+          "name": "Hamburguesa de lentejas",
+          "description": "En pan integral con vegetales y papas al horno"
+        }
+      }
+    }
+  }
+}
