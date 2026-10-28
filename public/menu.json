@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T15:04:14.164Z",
+  "updatedAt": "2026-10-28T15:05:07.437Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -54,7 +54,7 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pizza",
+          "name": "Pizza roquefort",
           "description": "Con papas españolas y cebolla caramelizada"
         },
         "dieta": {
