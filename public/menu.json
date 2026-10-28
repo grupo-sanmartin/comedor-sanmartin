@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T15:05:07.437Z",
+  "updatedAt": "2026-10-28T15:06:55.471Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -54,16 +54,16 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pizza roquefort",
-          "description": "Con papas españolas y cebolla caramelizada"
+          "name": "Pizza",
+          "description": ""
         },
         "dieta": {
-          "name": "Bowl de quinoa y lentejas",
-          "description": "Con palta, tomate cherry y semillas"
+          "name": "Suprema a la milanesa",
+          "description": "guarnición a elección"
         },
         "opcional1": {
-          "name": "Lasaña de verduras",
-          "description": "Espinaca, zapallitos, ricota y salsa blanca"
+          "name": "Zapallito revuelto",
+          "description": ""
         },
         "opcional2": {
           "name": "Sándwich de lomito",
