@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T15:08:07.194Z",
+  "updatedAt": "2026-10-28T17:40:11.885Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -75,20 +75,20 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pastel de papas",
-          "description": "Carne picada, aceitunas y huevo, gratinado"
+          "name": "Ñoquis con salsa mixta (bolognesa y blanca)",
+          "description": ""
         },
         "dieta": {
-          "name": "Salmón rosado grillado",
-          "description": "Con ensalada tibia de vegetales asados"
+          "name": "Pollo al horno",
+          "description": ""
         },
         "opcional1": {
-          "name": "Risotto de hongos",
-          "description": "Champiñones, portobellos y parmesano"
+          "name": "Hamburguesa casera",
+          "description": ""
         },
         "opcional2": {
-          "name": "Ensalada mediterránea",
-          "description": "Garbanzos, pepino, tomate, aceitunas y queso feta"
+          "name": "Tirabusones con vegetales",
+          "description": ""
         }
       }
     },
