@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T15:06:55.471Z",
+  "updatedAt": "2026-10-28T15:08:07.194Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -66,8 +66,8 @@
           "description": ""
         },
         "opcional2": {
-          "name": "Sándwich de lomito",
-          "description": "En pan árabe con lechuga, tomate y huevo"
+          "name": "",
+          "description": ""
         }
       }
     },
