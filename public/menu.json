@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T09:00:00.000Z",
+  "updatedAt": "2026-10-28T14:55:36.412Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -54,7 +54,7 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pollo al horno con limón y romero",
+          "name": "Pollo al horno con limón y romero queso",
           "description": "Con papas españolas y cebolla caramelizada"
         },
         "dieta": {
