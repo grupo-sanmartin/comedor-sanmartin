@@ -68,6 +68,13 @@ export const UploadIcon = (p) => (
   </Icon>
 );
 
+export const GlobeIcon = (p) => (
+  <Icon {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3 12h18M12 3c2.5 2.7 3.5 5.7 3.5 9s-1 6.3-3.5 9c-2.5-2.7-3.5-5.7-3.5-9s1-6.3 3.5-9Z" />
+  </Icon>
+);
+
 export const LockIcon = (p) => (
   <Icon {...p}>
     <rect x="5" y="11" width="14" height="9" rx="2" />

@@ -30,6 +30,8 @@ jobs:
           # any other repo is served at https://<user>.github.io/<repo>/
           BASE_PATH: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
           VITE_ADMIN_PASSWORD_HASH: ${{ secrets.VITE_ADMIN_PASSWORD_HASH }}
+          # Repository the editor's "Publicar para todos" button commits menu.json to
+          VITE_GITHUB_REPO: ${{ github.repository }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

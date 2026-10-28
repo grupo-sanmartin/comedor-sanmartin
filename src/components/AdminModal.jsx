@@ -1,12 +1,13 @@
 import { useRef, useState } from 'react';
-import { ADMIN_SESSION_KEY, CATEGORIES, DAYS } from '../lib/constants.js';
+import { ADMIN_SESSION_KEY, CATEGORIES, DAYS, GITHUB_TOKEN_KEY } from '../lib/constants.js';
 import { verifyPassword } from '../lib/auth.js';
+import { publishMenu } from '../lib/github.js';
 import { normalizeMenu, validateMenu } from '../lib/menuSchema.js';
-import { downloadJson, safeGet, safeSet } from '../lib/storage.js';
+import { downloadJson, safeGet, safeRemove, safeSet } from '../lib/storage.js';
 import Dialog from './admin/Dialog.jsx';
 import Field from './admin/Field.jsx';
 import ItemEditor from './admin/ItemEditor.jsx';
-import { CloseIcon, DownloadIcon, LockIcon, ResetIcon, UploadIcon } from './Icons.jsx';
+import { CloseIcon, DownloadIcon, GlobeIcon, LockIcon, ResetIcon, UploadIcon } from './Icons.jsx';
 
 const secondaryBtn =
   'inline-flex items-center justify-center gap-1.5 rounded-lg bg-white px-3 py-2 text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-slate-50 disabled:opacity-50';
@@ -123,7 +124,19 @@ function MenuEditor({
   const [draft, setDraft] = useState(() => structuredClone(menu));
   const [dayKey, setDayKey] = useState(initialDayKey);
   const [notice, setNotice] = useState(null); // { tone: 'ok' | 'error', text }
+  const [token, setToken] = useState(() => safeGet(localStorage, GITHUB_TOKEN_KEY) ?? '');
+  const [publishing, setPublishing] = useState(false);
+  // Evaluated once so the section doesn't collapse while the token is being typed.
+  const [tokenSectionOpen] = useState(() => !token);
   const fileRef = useRef(null);
+  const tokenSectionRef = useRef(null);
+
+  const handleTokenChange = (e) => {
+    const value = e.target.value.trim();
+    setToken(value);
+    if (value) safeSet(localStorage, GITHUB_TOKEN_KEY, value);
+    else safeRemove(localStorage, GITHUB_TOKEN_KEY);
+  };
 
   const edit = (updater) => {
     setDraft((d) => updater(structuredClone(d)));
@@ -136,9 +149,35 @@ function MenuEditor({
     setDirty(false);
     setNotice(
       ok
-        ? { tone: 'ok', text: 'Guardado en este navegador. Exportá el menu.json para publicarlo para todos.' }
+        ? { tone: 'ok', text: 'Guardado solo en este navegador. Tocá “Publicar para todos” para que lo vea el resto.' }
         : { tone: 'error', text: 'No se pudo guardar en este navegador (almacenamiento bloqueado o lleno).' },
     );
+  };
+
+  const handlePublish = async () => {
+    if (!token) {
+      tokenSectionRef.current.open = true;
+      tokenSectionRef.current.querySelector('input')?.focus();
+      setNotice({ tone: 'error', text: 'Para publicar, primero cargá el token de GitHub.' });
+      return;
+    }
+    if (!window.confirm('El menú se publicará para todos. ¿Continuar?')) return;
+    setPublishing(true);
+    setNotice(null);
+    try {
+      // Keep it as the local preview until the deploy finishes; useMenu drops it once the site serves it.
+      const menuToPublish = onSaveLocal(draft) || normalizeMenu({ ...draft, updatedAt: new Date().toISOString() });
+      await publishMenu(token, menuToPublish);
+      setDirty(false);
+      setNotice({
+        tone: 'ok',
+        text: 'Publicado. En 1 o 2 minutos lo ven todos. Cuando esté online, el aviso de vista previa desaparece solo al recargar.',
+      });
+    } catch (err) {
+      setNotice({ tone: 'error', text: `No se pudo publicar: ${err.message}` });
+    } finally {
+      setPublishing(false);
+    }
   };
 
   const handleExport = () => {
@@ -276,6 +315,27 @@ function MenuEditor({
             ))}
           </div>
         </details>
+
+        <details ref={tokenSectionRef} open={tokenSectionOpen} className="group rounded-xl ring-1 ring-slate-200/70">
+          <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-slate-800 select-none sm:px-5">
+            Publicación en GitHub
+            <span className="ml-2 text-xs font-normal text-slate-400">{token ? '(token cargado)' : '(falta el token)'}</span>
+          </summary>
+          <div className="space-y-2 border-t border-slate-100 p-4 sm:p-5">
+            <Field
+              id="github-token"
+              label="Token de GitHub"
+              type="password"
+              autoComplete="off"
+              placeholder="github_pat_…"
+              value={token}
+              onChange={handleTokenChange}
+            />
+            <p className="text-xs text-slate-500">
+              Se guarda solo en este navegador. Borrá el campo para olvidarlo.
+            </p>
+          </div>
+        </details>
       </div>
 
       {/* Footer */}
@@ -305,9 +365,14 @@ function MenuEditor({
               </button>
             )}
           </div>
-          <button type="button" className={primaryBtn} disabled={!dirty} onClick={handleSave}>
-            Guardar vista previa
-          </button>
+          <div className="grid grid-cols-2 gap-2 sm:flex">
+            <button type="button" className={secondaryBtn} disabled={!dirty} onClick={handleSave}>
+              Guardar vista previa
+            </button>
+            <button type="button" className={primaryBtn} disabled={publishing} onClick={handlePublish}>
+              <GlobeIcon /> {publishing ? 'Publicando…' : 'Publicar para todos'}
+            </button>
+          </div>
         </div>
       </div>
     </>

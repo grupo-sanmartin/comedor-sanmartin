@@ -33,7 +33,14 @@ export function useMenu() {
     try {
       const res = await fetch(MENU_URL, { cache: 'no-store' });
       if (!res.ok) throw new Error(`No se pudo cargar el menú (HTTP ${res.status}).`);
-      setPublishedMenu(normalizeMenu(await res.json()));
+      const published = normalizeMenu(await res.json());
+      setPublishedMenu(published);
+      // Once the site serves a menu as new as the local copy (e.g. after "Publicar"), the preview is no longer needed.
+      const local = readLocalMenu();
+      if (local && published.updatedAt >= local.updatedAt) {
+        safeRemove(localStorage, STORAGE_KEY);
+        setLocalMenu(null);
+      }
       setStatus('ready');
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
@@ -49,7 +56,8 @@ export function useMenu() {
     const next = normalizeMenu({ ...menu, updatedAt: new Date().toISOString() });
     const ok = safeSet(localStorage, STORAGE_KEY, JSON.stringify(next));
     setLocalMenu(next);
-    return ok;
+    // The saved menu (with its updatedAt) so it can be published as-is, or null if storage failed.
+    return ok ? next : null;
   }, []);
 
   const clearLocal = useCallback(() => {

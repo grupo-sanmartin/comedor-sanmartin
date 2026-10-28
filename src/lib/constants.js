@@ -1,5 +1,6 @@
 export const STORAGE_KEY = 'menu-comedor:local-menu:v1';
 export const ADMIN_SESSION_KEY = 'menu-comedor:admin-unlocked';
+export const GITHUB_TOKEN_KEY = 'menu-comedor:github-token';
 
 export const DAYS = [
   { key: 'monday', label: 'Lunes', short: 'Lun', weekday: 1 },

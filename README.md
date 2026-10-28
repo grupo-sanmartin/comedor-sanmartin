@@ -77,12 +77,30 @@ npm run hash-password -- "my-new-password"
 
 | Button | What it does |
 |---|---|
+| **Publicar para todos** | Commits the menu to `public/menu.json` in the repository through the GitHub API. The Pages workflow redeploys and everyone sees it in 1–2 minutes. Needs a GitHub token (see below). |
 | **Guardar vista previa** | Saves your edits in this browser's `localStorage`. Only this browser sees them, and the footer shows a "Vista previa local" badge. |
 | **Exportar menu.json** | Downloads the edited menu as `menu.json`. |
 | **Importar** | Loads a `menu.json` into the editor. The file is validated first. Click *Guardar* to apply it. |
 | **Restaurar publicado** | Deletes the local copy and goes back to the published `menu.json`. |
 
+### GitHub token for "Publicar para todos"
+
+Create it once, signed in as the account that owns the repository:
+
+1. Go to *Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token*.
+2. *Repository access*: **Only select repositories** → this repository.
+3. *Permissions → Repository permissions → Contents*: **Read and write**.
+4. Copy the token and paste it in the editor, under **Publicación en GitHub**.
+
+The token is stored only in that browser's `localStorage`; it is never part of the build. Anyone who has it can
+change the repository's files, so only paste it on the administrator's own computer. To revoke it, delete it on GitHub.
+
 ### Weekly update workflow (for the cafeteria administrator)
+
+With the token loaded, open the editor, edit the dishes and click **Publicar para todos**. The local preview badge
+goes away by itself once the site serves the new menu.
+
+Without a token you can publish by hand:
 
 1. Open the site, open the editor and edit the week's dishes.
 2. Click **Guardar vista previa** and check how the menu looks.
