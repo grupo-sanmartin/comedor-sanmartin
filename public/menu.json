@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T17:40:11.885Z",
+  "updatedAt": "2026-10-29T17:15:15.799Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -96,20 +96,20 @@
       "note": "Viernes de pastas: postre incluido.",
       "items": {
         "principal": {
-          "name": "Sorrentinos de jamón y queso",
-          "description": "Con salsa mixta (fileto y crema)"
+          "name": "Pollo al limon",
+          "description": "Papas fritas"
         },
         "dieta": {
-          "name": "Wok de pollo y vegetales",
-          "description": "Con arroz yamaní y salsa de soja reducida en sodio"
+          "name": "Bife",
+          "description": ""
         },
         "opcional1": {
-          "name": "Pizza de muzzarella y rúcula",
-          "description": "Masa madre, tomates secos y aceite de oliva"
+          "name": "Hamburguesa de lentejas",
+          "description": ""
         },
         "opcional2": {
-          "name": "Hamburguesa de lentejas",
-          "description": "En pan integral con vegetales y papas al horno"
+          "name": "",
+          "description": ""
         }
       }
     }
