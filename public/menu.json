@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T17:15:15.799Z",
+  "updatedAt": "2026-10-30T15:04:29.379Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -93,7 +93,7 @@
       }
     },
     "friday": {
-      "note": "Viernes de pastas: postre incluido.",
+      "note": "",
       "items": {
         "principal": {
           "name": "Pollo al limon",
