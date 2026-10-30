@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T15:04:29.379Z",
+  "updatedAt": "2026-10-30T17:10:55.193Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -12,20 +12,20 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Milanesa de ternera al horno",
-          "description": "Con puré de papas y calabaza"
+          "name": "Bifecito a la criolla",
+          "description": "Con Guarnicion"
         },
         "dieta": {
-          "name": "Pechuga grillada a las hierbas",
-          "description": "Con vegetales salteados y arroz integral"
+          "name": "Pollo",
+          "description": "Con Guarnicion"
         },
         "opcional1": {
-          "name": "Tarta de espinaca y ricota",
-          "description": "Con ensalada de hojas verdes"
+          "name": "Omelette de verdeo y queso",
+          "description": ""
         },
         "opcional2": {
-          "name": "Ensalada César con pollo",
-          "description": "Lechuga romana, croutons, parmesano y aderezo César"
+          "name": "",
+          "description": ""
         }
       }
     },
