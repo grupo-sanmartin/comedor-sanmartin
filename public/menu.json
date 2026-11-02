@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T17:10:55.193Z",
+  "updatedAt": "2026-11-02T14:02:25.463Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -33,20 +33,20 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Bife de chorizo a la plancha",
-          "description": "Con papas rústicas y chimichurri"
+          "name": "Bastoncitos de merluza",
+          "description": "con guarnicion"
         },
         "dieta": {
-          "name": "Merluza al vapor",
-          "description": "Con brócoli, zanahoria y limón"
+          "name": "Bife",
+          "description": "con guarnicion"
         },
         "opcional1": {
-          "name": "Ñoquis de papa con salsa fileto",
-          "description": "Salsa de tomate natural y albahaca"
+          "name": "Milanesa de berenjena",
+          "description": "con guarnicion"
         },
         "opcional2": {
-          "name": "Wrap de vegetales grillados",
-          "description": "Berenjena, zucchini, morrón y hummus"
+          "name": "",
+          "description": ""
         }
       }
     },
