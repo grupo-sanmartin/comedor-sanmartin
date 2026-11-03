@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T14:02:25.463Z",
+  "updatedAt": "2026-11-03T14:48:32.948Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -54,19 +54,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pizza",
+          "name": "Pizzacanelones de ricota y verdura",
           "description": ""
         },
         "dieta": {
-          "name": "Suprema a la milanesa",
-          "description": "guarnición a elección"
+          "name": "Pata y muslo",
+          "description": "con guarnición"
         },
         "opcional1": {
-          "name": "Zapallito revuelto",
+          "name": "Revuelto gramajo",
           "description": ""
         },
         "opcional2": {
-          "name": "",
+          "name": "Hambuerguesa de zanahoria",
           "description": ""
         }
       }
