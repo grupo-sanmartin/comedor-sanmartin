@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T14:48:32.948Z",
+  "updatedAt": "2026-11-04T11:59:58.243Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -54,7 +54,7 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pizzacanelones de ricota y verdura",
+          "name": "Canelones de ricota y verdura",
           "description": ""
         },
         "dieta": {
