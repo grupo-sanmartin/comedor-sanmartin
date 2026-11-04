@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T11:59:58.243Z",
+  "updatedAt": "2026-11-04T14:18:53.106Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -75,19 +75,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Ñoquis con salsa mixta (bolognesa y blanca)",
-          "description": ""
+          "name": "Albondigas",
+          "description": "con guarnicion"
         },
         "dieta": {
-          "name": "Pollo al horno",
-          "description": ""
+          "name": "Carne a la portuguesa",
+          "description": "con guarnicion"
         },
         "opcional1": {
-          "name": "Hamburguesa casera",
+          "name": "Budin de calabaza",
           "description": ""
         },
         "opcional2": {
-          "name": "Tirabusones con vegetales",
+          "name": "",
           "description": ""
         }
       }
