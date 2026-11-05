@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T14:18:53.106Z",
+  "updatedAt": "2026-11-05T14:53:09.508Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -96,15 +96,15 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pollo al limon",
-          "description": "Papas fritas"
-        },
-        "dieta": {
-          "name": "Bife",
+          "name": "Tarta (jamon y queso, pollo, verduras)",
           "description": ""
         },
+        "dieta": {
+          "name": "Pollo",
+          "description": "con fritas"
+        },
         "opcional1": {
-          "name": "Hamburguesa de lentejas",
+          "name": "Papas a caballo",
           "description": ""
         },
         "opcional2": {
