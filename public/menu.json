@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T12:29:02.497Z",
+  "updatedAt": "2026-11-06T18:17:54.060Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -9,18 +9,18 @@
   },
   "days": {
     "monday": {
-      "note": "",
+      "note": "Feriado",
       "items": {
         "principal": {
-          "name": "Bifecito a la criolla",
-          "description": "Con Guarnicion"
+          "name": "",
+          "description": ""
         },
         "dieta": {
-          "name": "Pollo",
-          "description": "Con Guarnicion"
+          "name": "",
+          "description": ""
         },
         "opcional1": {
-          "name": "Omelette de verdeo y queso",
+          "name": "",
           "description": ""
         },
         "opcional2": {
@@ -30,19 +30,19 @@
       }
     },
     "tuesday": {
-      "note": "",
+      "note": "Feriado",
       "items": {
         "principal": {
-          "name": "Bastoncitos de merluza",
-          "description": "con guarnicion"
+          "name": "",
+          "description": ""
         },
         "dieta": {
-          "name": "Bife",
-          "description": "con guarnicion"
+          "name": "",
+          "description": ""
         },
         "opcional1": {
-          "name": "Milanesa de berenjena",
-          "description": "con guarnicion"
+          "name": "",
+          "description": ""
         },
         "opcional2": {
           "name": "",
@@ -51,39 +51,18 @@
       }
     },
     "wednesday": {
-      "note": "",
+      "note": "Feriado",
       "items": {
         "principal": {
-          "name": "Canelones de ricota y verdura",
+          "name": "",
           "description": ""
         },
         "dieta": {
-          "name": "Pata y muslo",
-          "description": "con guarnición"
-        },
-        "opcional1": {
-          "name": "Revuelto gramajo",
+          "name": "",
           "description": ""
         },
-        "opcional2": {
-          "name": "Hambuerguesa de zanahoria",
-          "description": ""
-        }
-      }
-    },
-    "thursday": {
-      "note": "",
-      "items": {
-        "principal": {
-          "name": "Albondigas",
-          "description": "con guarnicion"
-        },
-        "dieta": {
-          "name": "Carne a la portuguesa",
-          "description": "con guarnicion"
-        },
         "opcional1": {
-          "name": "Budin de calabaza",
+          "name": "",
           "description": ""
         },
         "opcional2": {
@@ -92,19 +71,40 @@
         }
       }
     },
+    "thursday": {
+      "note": "",
+      "items": {
+        "principal": {
+          "name": "Tallarines con salsa boloñesa, pesto, roquefort",
+          "description": ""
+        },
+        "dieta": {
+          "name": "Pollo al horno",
+          "description": ""
+        },
+        "opcional1": {
+          "name": "Milanesa de soja",
+          "description": ""
+        },
+        "opcional2": {
+          "name": "Tortilla de verdura",
+          "description": ""
+        }
+      }
+    },
     "friday": {
       "note": "",
       "items": {
         "principal": {
-          "name": "Tarta (jamon y queso, pollo, verdura)",
+          "name": "",
           "description": ""
         },
         "dieta": {
-          "name": "Pollo",
-          "description": "Papas fritas"
+          "name": "",
+          "description": ""
         },
         "opcional1": {
-          "name": "Papas a caballo",
+          "name": "",
           "description": ""
         },
         "opcional2": {
