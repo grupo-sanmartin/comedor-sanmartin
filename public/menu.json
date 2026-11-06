@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T14:53:09.508Z",
+  "updatedAt": "2026-11-06T12:29:02.497Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -96,12 +96,12 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Tarta (jamon y queso, pollo, verduras)",
+          "name": "Tarta (jamon y queso, pollo, verdura)",
           "description": ""
         },
         "dieta": {
           "name": "Pollo",
-          "description": "con fritas"
+          "description": "Papas fritas"
         },
         "opcional1": {
           "name": "Papas a caballo",
