@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T18:17:54.060Z",
+  "updatedAt": "2026-11-13T11:19:05.080Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -96,19 +96,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "",
-          "description": ""
+          "name": "Bondiola",
+          "description": "Fritas"
         },
         "dieta": {
-          "name": "",
-          "description": ""
+          "name": "Bifa",
+          "description": "con guarnicion"
         },
         "opcional1": {
-          "name": "",
+          "name": "Hamburguesa de lentejas",
           "description": ""
         },
         "opcional2": {
-          "name": "",
+          "name": "Papas a caballo",
           "description": ""
         }
       }
