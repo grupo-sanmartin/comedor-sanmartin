@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T11:19:05.080Z",
+  "updatedAt": "2026-11-16T11:58:48.292Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -9,18 +9,18 @@
   },
   "days": {
     "monday": {
-      "note": "Feriado",
+      "note": "",
       "items": {
         "principal": {
-          "name": "",
-          "description": ""
+          "name": "Cima rellena",
+          "description": "con guarnicion"
         },
         "dieta": {
-          "name": "",
-          "description": ""
+          "name": "Pollo",
+          "description": "con guarnicion"
         },
         "opcional1": {
-          "name": "",
+          "name": "Tortilla de zapallito",
           "description": ""
         },
         "opcional2": {
