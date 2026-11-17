@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T11:58:48.292Z",
+  "updatedAt": "2026-11-17T12:30:49.679Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -30,18 +30,18 @@
       }
     },
     "tuesday": {
-      "note": "Feriado",
+      "note": "",
       "items": {
         "principal": {
-          "name": "",
+          "name": "Suprema a la milanesa",
           "description": ""
         },
         "dieta": {
-          "name": "",
+          "name": "Bife",
           "description": ""
         },
         "opcional1": {
-          "name": "",
+          "name": "Milanesa de soja",
           "description": ""
         },
         "opcional2": {
