@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T12:30:49.679Z",
+  "updatedAt": "2026-11-18T11:10:51.335Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -51,18 +51,18 @@
       }
     },
     "wednesday": {
-      "note": "Feriado",
+      "note": "",
       "items": {
         "principal": {
-          "name": "",
+          "name": "Lasagna gratinada",
           "description": ""
         },
         "dieta": {
-          "name": "",
+          "name": "Pollo",
           "description": ""
         },
         "opcional1": {
-          "name": "",
+          "name": "Tarteletas de queso y cebolla",
           "description": ""
         },
         "opcional2": {
