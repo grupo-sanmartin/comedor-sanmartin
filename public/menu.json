@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T11:10:51.335Z",
+  "updatedAt": "2026-11-19T13:42:52.436Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -75,19 +75,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Tallarines con salsa boloñesa, pesto, roquefort",
+          "name": "Pastel de papa criollo",
           "description": ""
         },
         "dieta": {
-          "name": "Pollo al horno",
+          "name": "Bife",
           "description": ""
         },
         "opcional1": {
-          "name": "Milanesa de soja",
+          "name": "Milanesa de berenjena",
           "description": ""
         },
         "opcional2": {
-          "name": "Tortilla de verdura",
+          "name": "",
           "description": ""
         }
       }
@@ -96,19 +96,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Bondiola",
-          "description": "Fritas"
+          "name": "Pancho Day!!!!!!!!!",
+          "description": ""
         },
         "dieta": {
-          "name": "Bifa",
-          "description": "con guarnicion"
+          "name": "Pollo",
+          "description": ""
         },
         "opcional1": {
           "name": "Hamburguesa de lentejas",
           "description": ""
         },
         "opcional2": {
-          "name": "Papas a caballo",
+          "name": "",
           "description": ""
         }
       }
