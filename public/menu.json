@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T17:30:47.928Z",
+  "updatedAt": "2026-11-25T18:32:41.575Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -75,19 +75,19 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pastel de papa criollo",
+          "name": "Pizza (jamon, calabreza, tomate, huevo)",
           "description": ""
         },
         "dieta": {
           "name": "Bife",
-          "description": ""
+          "description": "con guarnicion"
         },
         "opcional1": {
-          "name": "Milanesa de berenjena",
+          "name": "Tortilla de acelga",
           "description": ""
         },
         "opcional2": {
-          "name": "",
+          "name": "Pastel de papas",
           "description": ""
         }
       }
