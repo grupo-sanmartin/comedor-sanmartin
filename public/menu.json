@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T18:32:41.575Z",
+  "updatedAt": "2026-11-27T14:26:13.344Z",
   "cafeteria": {
     "name": "Comedor Corporativo",
     "hours": "12:30 a 13:00 y 13:30 a 14:00",
@@ -96,15 +96,15 @@
       "note": "",
       "items": {
         "principal": {
-          "name": "Pancho Day!!!!!!!!!",
+          "name": "Tapa de asado a la parrilla",
           "description": ""
         },
         "dieta": {
-          "name": "Pollo",
+          "name": "Pollo a la parrilla",
           "description": ""
         },
         "opcional1": {
-          "name": "Hamburguesa de lentejas",
+          "name": "Omelette capresse",
           "description": ""
         },
         "opcional2": {
